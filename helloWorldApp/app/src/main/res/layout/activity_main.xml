@@ -10,8 +10,36 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.demouser.helloworldapp.MainActivity">
 
+    <Button
+        android:text="LOOKUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/lookupButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:hint="Country Code"
+        android:text="Country Code"
+        android:layout_alignBottom="@+id/lookupButton"
+        android:layout_toLeftOf="@+id/lookupButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_below="@+id/editText"
+        android:id="@+id/countryCode"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
 </RelativeLayout>
